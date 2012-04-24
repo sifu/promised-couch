@@ -5,7 +5,13 @@ var assert = require( 'assert' )
 var request = require( 'promised-request' )
 var CouchDB = require( './main' ).CouchDB
 
-var TESTDB = 'http://sifu:test@127.0.0.1:5984/promised-couch-test/'
+//var TESTDB = 'http://127.0.0.1:5984/promised-couch-test/'
+if( !process.argv[ 2 ] ) {
+    console.info( 'usage: ./tests.js http://user:password@127.0.0.1:5984/some-db/' )
+    process.exit( 1 )
+}
+
+var TESTDB = process.argv[ 2 ]
 
 function setup( ) {
     return request( { uri: TESTDB, method: 'DELETE' } )
