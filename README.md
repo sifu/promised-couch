@@ -1,4 +1,4 @@
-# A simple, very lowlevel CouchDB module, which uses promises
+# A simple, very lowlevel CouchDB module for node.js, which uses promises
 
 only basic get, add, update functionality for now
 
