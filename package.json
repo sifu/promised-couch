@@ -1,0 +1,28 @@
+{
+    "name": "promised-couch",
+    "description": "a simple CouchDB module, which uses promises",
+    "keywords": [ "couchdb", "database", "promise" ],
+    "author": {
+        "name": "Siegmund Führinger",
+        "email": "io@sifu.io",
+        "url": "http://sifu.io"
+    },
+    "version": "0.1.1",
+    "repository" : {
+        "type": "git",
+        "url": "http://github.com/sifu/promised-couch"
+    },
+    "main" : "./main",
+    "scripts": {
+        "test": "node tests.js"
+    },
+    "dependencies": {
+        "promised-request": "1.0.0"
+    },
+    "devDependencies": {
+        "assert": "0.4.9"
+    },
+    "engines" : {
+        "node": "~0.6.7"
+    }
+}
